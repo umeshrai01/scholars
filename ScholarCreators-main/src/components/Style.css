@@ -1,0 +1,347 @@
+.page{
+    margin: 2rem;
+    margin-top: 4rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.dis{
+    display: flex;
+    gap: 4rem;
+    .cardhead{
+        width: 70%;
+    }
+
+    .banklist{
+        width: 30%;
+    }
+}
+
+.card{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    background: #fff;
+}
+
+.titlet{
+    display: flex;
+    h3{
+        width: 80%;
+        text-align: left;
+    }
+    p{
+        width: 16%;
+        margin-left: 4%;
+        background: red;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 2px solid aqua;
+        border-radius: 1rem;
+        padding: 1rem;
+        font-size: 18px;
+    }
+}
+
+.names{
+    display: flex;
+    gap: 2rem;
+    h5{
+        width: 14rem;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .btn{
+        width: 10rem;
+        justify-content: right;
+        border: 2px solid black;
+        border-radius: 1rem;
+        margin-left: 80%;
+        margin-right: auto;
+        background: #f5ab22;
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+    }
+}
+
+/* Admin DashBoard*/
+
+.content{
+    background: #fff;
+    h3{
+        text-align: center;
+        padding-top: 2rem;
+    }
+}
+
+.flex{
+    display: flex;
+    gap: 4rem;
+    padding: 2rem;
+    .menu{
+        padding: 2rem;
+        height: auto;
+        align-items: center;
+        width: 20%;
+        border-right: 5px solid aqua;
+        border-top: 2px solid aqua;
+        border-bottom: 2px solid aqua;
+        border-radius: 1rem;
+        h5{
+            margin-top: 2rem;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .adminInput{
+        width: 50%;
+        .forma{
+            padding: 2rem;
+            border-radius: 2rem;
+            width: 40rem;
+            background: #f5ab22;
+            label{
+                margin-left: 5px;
+                font-size: 18px;
+            }
+            .scholar{
+                display: flex;
+                flex-direction: column;
+                h4{
+                    text-align: center;
+                }
+                .button{
+                    margin-top: 2rem;
+                    background: green;
+                    font-weight: 800;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+    .adminProfile{
+        height: auto;
+        width: 20%;
+        padding-left: 10px;
+        border-left: 5px solid aqua;
+        border-top: 2px solid aqua;
+        border-bottom: 2px solid aqua;
+        border-radius: 1rem;
+        h5{
+            text-align: center;
+            margin-bottom: 3rem;
+            margin-top: 1rem;
+        }
+    }
+
+}
+.link{
+    margin: 2rem;
+    padding-top: 2rem;
+}
+
+/* List */
+.schol{
+    justify-content: left;
+    display: flex;
+    gap: 4rem;
+    .list{
+        width: 65%;
+        .title{
+            h3{
+                text-align: left;
+            }
+        }
+    }
+    .contelist{
+        width: 30%;
+    }
+}
+
+/*EditList*/
+
+.editlist{
+    display: flex;
+    gap: 2rem;
+    .formedit{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        .scholar{
+            display: flex;
+            flex-direction: column;
+            background-color: #f0ab22;
+            border-radius: 2rem;
+            padding: 2rem;
+            input{
+                margin-bottom: 1rem;
+                width: 90%;
+            }
+            .button{
+                width: 25%;
+                margin-left: auto;
+                margin-right: auto;
+                background: green;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.adpro{
+    background: #fff;
+    border-radius: 1rem;
+    width: 30rem;
+    padding: 2rem;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+
+
+@media screen and (max-width: 800px){
+    .dis{
+        display: flex;
+        flex-direction: column;
+
+        .cardhead{
+            width: 100%;
+
+            .names{
+                display: flex;
+                flex-direction: column;
+                margin: 0.5px;
+                gap: 0;
+                h5{
+                    width: 100%;
+                }
+                .btn{
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+        .banklist{
+            width: 100%;
+            margin: 0;
+            .blk{
+                width: 100%;
+                h3{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    /* DashBoard */
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+        .menu{
+            width: 100%;
+        }
+        .adminInput{
+            .forma{
+                background: #f0ab22;
+                width: 200%;
+                border-radius: 2rem;
+                .scholar{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 2rem;
+                    width: 100%;
+                    .button{
+                        margin-top: 1rem;
+                        width: 10rem;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-color: blue;
+                        color: wheat;
+                    }
+                }
+            }
+        }
+        .adminProfile{
+            width: 100%;
+        }
+    }
+
+    /* List */
+    .schol{
+     display: flex;
+     flex-direction: column;
+     gap: 2;
+     .list{
+        width: 100%;
+        .names{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+
+    }
+    .contelist{
+        width: 100%;
+    }
+    
+    /*EditList*/
+    .editlist{
+        display: flex;
+        flex-direction: column;
+        .formedit{
+            width: 100%;
+        }
+        .contelist{
+            width: 100%;
+        }
+    }
+
+
+    .adpro{
+        width: 90%;
+        padding: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .titlet{
+        display: flex;
+        flex-direction: column;
+        h3{
+            width: 100%;
+            text-align: left;
+        }
+        p{
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            border: 2px solid aqua;
+            border-radius: 1rem;
+            font-size: 18px;
+        }
+    }
+
+    .scel{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        gap: 2rem;
+    }
+}
